@@ -17,14 +17,15 @@ public class BodySubAction
 {
 	public string id;
 	public float time;
-	public string rootJoint;
+	//public string rootJoint;
+	public BodyData.Joints rootJoint;
 	public List<JointMove> moves; // JointName,EularAngles
 }
 
 [Serializable]
 public class JointMove
 {
-	public string joint;
+	public BodyData.Joints joint;
 	public Vector3 eularAngles;
 }
 

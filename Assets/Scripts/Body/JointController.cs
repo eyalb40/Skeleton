@@ -19,6 +19,6 @@ public class JointController : MonoBehaviour
 	public void DoStep(JointMove move, float time)
 	{
 		Debug.Log ("JointController DoStep " + move.eularAngles);
-		LeanTween.rotate(gameObject, move.eularAngles, time);
+		LeanTween.rotateLocal(gameObject, move.eularAngles, time);
 	}
 }
